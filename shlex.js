@@ -264,7 +264,7 @@ class Shlexer {
  * @param {String} s String to split.
  * @returns {String[]}
  */
-exports.split = function (s) {
+export function split (s) {
   return Array.from(new Shlexer(s))
 }
 
@@ -274,7 +274,7 @@ exports.split = function (s) {
  * @param {String} s String to quote
  * @returns {String}
  */
-exports.quote = function (s) {
+export function quote (s) {
   if (s === '') { return '\'\'' }
 
   var unsafeRe = /[^\w@%\-+=:,./]/
